@@ -23,12 +23,6 @@ It allows users to calculate their BMI easily and see which health category they
 
 ---
 
-## 📸 Preview
-
-![BMI Calculator UI](./screenshot.png)
-
-*(You can replace `screenshot.png` with your actual UI screenshot filename — place it in the project root.)*
-
 ---
 
 ## 🧩 How to Run Locally
