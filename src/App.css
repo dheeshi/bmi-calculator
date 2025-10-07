@@ -1,0 +1,149 @@
+/* Full-screen layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* BMI Card */
+.bmi-card {
+  width: 400px;
+  background: white;
+  border-radius: 25px;
+  padding: 40px 35px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.bmi-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2f2f91;
+  margin-bottom: 30px;
+}
+
+/* Input section */
+.input-section {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 13px 1px;
+  border-radius: 10px;
+  border: 1.5px solid #dcdcdc;
+  background: #f8f9fc;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #7a5af8;
+  box-shadow: 0 0 8px rgba(122, 90, 248, 0.4);
+  outline: none;
+}
+
+/* Buttons */
+.calculate-btn {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(135deg, #7a5af8, #5ac8fa);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s ease;
+}
+
+.calculate-btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #5b4ef0, #47b9f9);
+}
+
+/* Result box */
+.result-card {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #f7f8fa, #e6e8ef);
+  box-shadow: inset 3px 3px 8px #d1d1d1, inset -3px -3px 8px #ffffff;
+  transition: 0.3s ease;
+}
+
+.bmi-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2f2f91;
+  margin-bottom: 8px;
+}
+
+.bmi-message {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.reset-btn {
+  background: #ff6b6b;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #ff8787;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .bmi-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  input[type="number"] {
+    font-size: 0.95rem;
+  }
+}
+
